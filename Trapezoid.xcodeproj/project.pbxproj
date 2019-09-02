@@ -13,6 +13,10 @@
 		E1EF9DB7231AC18100436C00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1EF9DB5231AC18100436C00 /* Main.storyboard */; };
 		E1EF9DB9231AC18400436C00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1EF9DB8231AC18400436C00 /* Assets.xcassets */; };
 		E1EF9DBC231AC18400436C00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1EF9DBA231AC18400436C00 /* LaunchScreen.storyboard */; };
+		E1EF9DC6231AE66500436C00 /* TrapezoidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EF9DC5231AE66500436C00 /* TrapezoidViewController.swift */; };
+		E1F3E1D1231CDE0D0017649A /* Proportion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3E1D0231CDE0D0017649A /* Proportion.swift */; };
+		E1F3E1D3231CDEA30017649A /* PropConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F3E1D2231CDEA30017649A /* PropConversionViewController.swift */; };
+		E1F3E1D5231CEB5C0017649A /* chemistry.txt in Resources */ = {isa = PBXBuildFile; fileRef = E1F3E1D4231CEB5C0017649A /* chemistry.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		E1EF9DB8231AC18400436C00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1EF9DBB231AC18400436C00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1EF9DBD231AC18400436C00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1EF9DC5231AE66500436C00 /* TrapezoidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrapezoidViewController.swift; sourceTree = "<group>"; };
+		E1F3E1D0231CDE0D0017649A /* Proportion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proportion.swift; sourceTree = "<group>"; };
+		E1F3E1D2231CDEA30017649A /* PropConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropConversionViewController.swift; sourceTree = "<group>"; };
+		E1F3E1D4231CEB5C0017649A /* chemistry.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chemistry.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,12 @@
 		E1EF9DAE231AC18100436C00 /* Trapezoid */ = {
 			isa = PBXGroup;
 			children = (
+				E1F3E1D4231CEB5C0017649A /* chemistry.txt */,
 				E1EF9DAF231AC18100436C00 /* AppDelegate.swift */,
 				E1EF9DB1231AC18100436C00 /* SceneDelegate.swift */,
+				E1F3E1D0231CDE0D0017649A /* Proportion.swift */,
+				E1EF9DC5231AE66500436C00 /* TrapezoidViewController.swift */,
+				E1F3E1D2231CDEA30017649A /* PropConversionViewController.swift */,
 				E1EF9DB3231AC18100436C00 /* ViewController.swift */,
 				E1EF9DB5231AC18100436C00 /* Main.storyboard */,
 				E1EF9DB8231AC18400436C00 /* Assets.xcassets */,
@@ -128,6 +140,7 @@
 				E1EF9DBC231AC18400436C00 /* LaunchScreen.storyboard in Resources */,
 				E1EF9DB9231AC18400436C00 /* Assets.xcassets in Resources */,
 				E1EF9DB7231AC18100436C00 /* Main.storyboard in Resources */,
+				E1F3E1D5231CEB5C0017649A /* chemistry.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1F3E1D1231CDE0D0017649A /* Proportion.swift in Sources */,
+				E1F3E1D3231CDEA30017649A /* PropConversionViewController.swift in Sources */,
 				E1EF9DB4231AC18100436C00 /* ViewController.swift in Sources */,
 				E1EF9DB0231AC18100436C00 /* AppDelegate.swift in Sources */,
 				E1EF9DB2231AC18100436C00 /* SceneDelegate.swift in Sources */,
+				E1EF9DC6231AE66500436C00 /* TrapezoidViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,16 @@
+二甲苯(Xylene)
+0.86
+甲醇(Methanol)
+0.79
+2-乙基己醇(2-EH)
+0.83
+2-Ethylhexyl acrylate(2-EHA)
+0.87
+甲苯(Toluene)
+0.86
+乙酸(HOAc)
+1.05
+氫氧化鈉(Naoh45%)
+1.48
+32%鹽酸(HCl 32%)
+1.16
