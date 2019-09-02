@@ -64,6 +64,21 @@ class PropConversionViewController: UIViewController , UIPickerViewDelegate , UI
     
     func getchemistryName(){
         if let url = Bundle.main.url(forResource:"chemistry", withExtension: "txt"),let content = try? String(contentsOf: url){
+           let chemistryArray = content.components(separatedBy: "\n")
+           for number in stride(from: 0, to: chemistryArray.count, by: 2) {
+                let  chemistryname = chemistryArray[number]
+                if chemistryname.count > 0 {
+                if let proportionvalue = Double(chemistryArray[number+1]){
+                    chemistryName.append(proportion(chemistryname: chemistryname, proportionvalue: Double(proportionvalue)))
+                    }
+                }
+                     
+          }
+        }
+    }
+    
+    /*func getchemistryName(){
+        if let url = Bundle.main.url(forResource:"chemistry", withExtension: "txt"),let content = try? String(contentsOf: url){
             let chemistryArray = content.components(separatedBy: "\n")
             for number in 1 ..< chemistryArray.count{
                 if number % 2 == 0{
@@ -77,7 +92,7 @@ class PropConversionViewController: UIViewController , UIPickerViewDelegate , UI
                 }
             }
         }
-    }
+    }*/
     
     func updateProportion(){
         proportionLabel.text = "\(chemistryName[chemistryIndex].proportionvalue)"
