@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PropConversionViewController: UIViewController , UIPickerViewDelegate , UIPickerViewDataSource {
+class PropConversionViewController: UIViewController , UIPickerViewDelegate , UIPickerViewDataSource , UITextFieldDelegate {
     
 
     @IBOutlet var chemistryNamePickerView: UIPickerView!
@@ -23,6 +23,9 @@ class PropConversionViewController: UIViewController , UIPickerViewDelegate , UI
         super.viewDidLoad()
         getchemistryName()
         updateProportion()
+        
+        let kiloTextField = kgTextField
+        kiloTextField?.clearButtonMode = .whileEditing
 
         // Do any additional setup after loading the view.
     }
@@ -44,19 +47,22 @@ class PropConversionViewController: UIViewController , UIPickerViewDelegate , UI
     }
     
     
-    
+    //回傳顯示幾個類別的pikcer
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
+    //回傳顯示化學原料名稱數量
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return chemistryName.count
     }
 
+//顯示文字在Picker上，titleForRow為現在要顯示的文字是在Picker上的第幾個，如果剛剛的numberOfComponents()有設定超過1的話，這邊的第三個參數component就可以用來判斷每個component要顯示的文字。
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return chemistryName[row].chemistryname
     }
     
+     //判斷現在選到的是第幾個，並依據選到的結果顯示對應化學原料的比重
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         chemistryIndex = row
         updateProportion()
